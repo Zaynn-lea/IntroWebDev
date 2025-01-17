@@ -31,13 +31,13 @@ And make it easy to change theme
 */
 :root {
     --TextColor:            #EEF1EF;
-    --BackgroundColor:      #0E1211;
     --BackgroundColorInner: #102B3F;
+    --BackgroundColor:      #0E1211;
 
-    --AccentColor1:       #6D52B7;
-    --AccentColor1Shade1: #A06CD5;
-    --AccentColor1Shade2: #CA9CE1;
-    --AccentColor1Shade3: #E2CFEA;
+    --AccentColor0:       #6D52B7;      /* Shade 0 */
+    --AccentColor0Shade1: #A06CD5;
+    --AccentColor0Shade2: #CA9CE1;
+    --AccentColor0Shade3: #E2CFEA;
 }
 
 
@@ -79,7 +79,7 @@ Use to get a nice thick rounded colorfull outline/border
 Because if we are only using the border rule, we dan't get rounded inner conrers
 */
 div#border_banner {
-    background-color: var(--AccentColor1);
+    background-color: var(--AccentColor0);
     border-radius:     2.25em;
     margin:            1em;
     padding:           1em;
@@ -91,6 +91,25 @@ div#border_banner h1 {
     padding-left:     15%;
 }
 
+div.line {
+    /* TODO */
+}
+
+div#line0 { background-color: var(--AccentColor0Shade1); }
+div#line1 { background-color: var(--AccentColor0Shade2); }
+div#line2 { background-color: var(--AccentColor0Shade3); }
+
+
+nav ul {
+    list-style:      none;
+    display:         flex;
+    justify-content: space-around;
+}
+
+nav a {
+    display: block;
+}
+
 
 /********************\
 |    Main Styling    |
@@ -99,7 +118,7 @@ div#border_banner h1 {
 
 main {
     background-color: var(--BackgroundColorInner);
-    border:           .1em solid var(--AccentColor1);
+    border:           .1em solid var(--AccentColor0);
 }
 
 
