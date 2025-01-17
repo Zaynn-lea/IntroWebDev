@@ -1,0 +1,124 @@
+
+/*
+Main style sheet
+
+---------------------------------------------------------------------------------------------------------------------------
+
+made by :
+    Gély Léandre :: https://github.com/Zaynn-lea
+
+date :
+    started      :  17 / 01 / 2025
+    last updated :  17 / 01 / 2025
+*/
+
+
+/* css reset */
+* {
+    margin:     0;
+    padding:    0;
+    box-sizing: border-box;
+}
+
+
+/*********************\
+|    css variables    |
+\*********************/
+
+/*
+To have a uniform color palete throughtout the site
+And make it easy to change theme
+*/
+:root {
+    --TextColor:            #EEF1EF;
+    --BackgroundColor:      #0E1211;
+    --BackgroundColorInner: #102B3F;
+
+    --AccentColor1:       #6D52B7;
+    --AccentColor1Shade1: #A06CD5;
+    --AccentColor1Shade2: #CA9CE1;
+    --AccentColor1Shade3: #E2CFEA;
+}
+
+
+/***********************\
+|    General Styling    |
+\***********************/
+
+html {
+    font-size:       1rem;
+    font-family:     monospace;
+    line-height:     1.4;
+    scroll-behavior: smooth;
+
+    color:            var(--TextColor);
+    background-color: var(--BackgroundColor);
+}
+
+a,
+a:visited {
+    font-size:       normal;
+    color:           var(--TextColor);
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+    cursor:          pointer;
+}
+
+
+/**********************\
+|    Header Styling    |
+\**********************/
+
+
+/*
+Use to get a nice thick rounded colorfull outline/border 
+Because if we are only using the border rule, we dan't get rounded inner conrers
+*/
+div#border_banner {
+    background-color: var(--AccentColor1);
+    border-radius:     2.25em;
+    margin:            1em;
+    padding:           1em;
+}
+
+div#border_banner h1 {
+    background-color: var(--BackgroundColor);
+    border-radius:    1em;
+    padding-left:     15%;
+}
+
+
+/********************\
+|    Main Styling    |
+\********************/
+
+
+main {
+    background-color: var(--BackgroundColorInner);
+    border:           .1em solid var(--AccentColor1);
+}
+
+
+/**********************\
+|    Footer Styling    |
+\**********************/
+
+
+footer {
+    display:         flex;
+    justify-content: space-around;
+}
+
+footer article {
+    margin:  auto;
+    padding: auto;
+}
+
+footer a,
+footer a:visited {
+    font-size: 1.2rem;
+}
