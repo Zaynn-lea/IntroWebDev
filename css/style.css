@@ -91,23 +91,21 @@ div#border_banner h1 {
     padding-left:     15%;
 }
 
-/* TODO : Make it work ... */
-/*
-div.lines {
+
+section.stripes {
     position: relative;
 }
 
-div.lines div {
-    height:   5rem;
-    width:    rem;
+svg.stripes {
     position: absolute;
-    top:      -1em;
+    top:      -3.90em;
+    right:    0em;
 }
 
-div#line0 {  right: 15em; background-color: var(--AccentColor0Shade1);  }
-div#line1 {  right: 9em;  background-color: var(--AccentColor0Shade2);  }
-div#line2 {  right: 3em;  background-color: var(--AccentColor0Shade3);  }
-*/
+path#stripe0 {  fill: var(--AccentColor0Shade1);  }
+path#stripe1 {  fill: var(--AccentColor0Shade2);  }
+path#stripe2 {  fill: var(--AccentColor0Shade3);  }
+
 
 nav ul {
     list-style:      none;
