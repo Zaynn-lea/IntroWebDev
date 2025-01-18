@@ -9,7 +9,7 @@ made by :
 
 date :
     started      :  17 / 01 / 2025
-    last updated :  17 / 01 / 2025
+    last updated :  18 / 01 / 2025
 */
 
 
@@ -31,8 +31,8 @@ And make it easy to change theme
 */
 :root {
     --TextColor:            #EEF1EF;
-    --BackgroundColorInner: #102B3F;
-    --BackgroundColor:      #0E1211;
+    --BackgroundColorInner: #0E1211;
+    --BackgroundColor:      #090C0B;
 
     --AccentColor0:       #6D52B7;      /* Shade 0 */
     --AccentColor0Shade1: #A06CD5;
@@ -76,7 +76,7 @@ a:focus {
 
 /*
 Use to get a nice thick rounded colorfull outline/border 
-Because if we are only using the border rule, we dan't get rounded inner conrers
+Because if we are only using the border rule, we dan't get the stripes
 */
 div#border_banner {
     background-color: var(--AccentColor0);
@@ -86,19 +86,28 @@ div#border_banner {
 }
 
 div#border_banner h1 {
-    background-color: var(--BackgroundColor);
+    background-color: var(--BackgroundColorInner);
     border-radius:    1em;
     padding-left:     15%;
 }
 
-div.line {
-    /* TODO */
+/* TODO : Make it work ... */
+/*
+div.lines {
+    position: relative;
 }
 
-div#line0 { background-color: var(--AccentColor0Shade1); }
-div#line1 { background-color: var(--AccentColor0Shade2); }
-div#line2 { background-color: var(--AccentColor0Shade3); }
+div.lines div {
+    height:   5rem;
+    width:    rem;
+    position: absolute;
+    top:      -1em;
+}
 
+div#line0 {  right: 15em; background-color: var(--AccentColor0Shade1);  }
+div#line1 {  right: 9em;  background-color: var(--AccentColor0Shade2);  }
+div#line2 {  right: 3em;  background-color: var(--AccentColor0Shade3);  }
+*/
 
 nav ul {
     list-style:      none;
@@ -118,7 +127,21 @@ nav a {
 
 main {
     background-color: var(--BackgroundColorInner);
-    border:           .1em solid var(--AccentColor0);
+    border:           .175em solid var(--AccentColor0);
+    border-left:      var(--BackgroundColorInner);
+    border-right:     var(--BackgroundColorInner);
+}
+
+main section {
+    display:   flex;
+    flex-wrap: wrap;
+}
+
+main article {
+    margin:        .5em;
+    padding:       .5em;
+    border:        .25em solid var(--AccentColor0Shade1);
+    border-radius: 1em;
 }
 
 
