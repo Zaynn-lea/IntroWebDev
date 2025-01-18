@@ -92,6 +92,9 @@ div#border_banner h1 {
 }
 
 
+/* make the stripes go under the titles
+    they go only on the border */
+
 section.stripes {
     position: relative;
 }
