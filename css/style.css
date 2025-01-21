@@ -133,14 +133,17 @@ main {
     border-right:     var(--BackgroundColorInner);
 }
 
+/*  TODO : Make it prettier  */
+
 main section {
-    display:   flex;
-    flex-wrap: wrap;
+    display:         flex;
+    flex-wrap:       wrap;
+    justify-content: space-evenly;
 }
 
 main article {
-    margin:        .5em;
-    padding:       .5em;
+    margin:        1em .5em;
+    padding:       1em 4em;
     border:        .25em solid var(--AccentColor0Shade1);
     border-radius: 1em;
 }
