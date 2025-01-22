@@ -17,6 +17,8 @@ date :
 |   Global styling   |
 \********************/
 
+/* Here we use grid since we have a fixed/static number of elements */
+
 .exercice_solution {
     display:               grid;
     grid-template-rows:    auto;
