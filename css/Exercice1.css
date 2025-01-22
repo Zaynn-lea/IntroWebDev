@@ -1,0 +1,60 @@
+
+/*
+Style sheet containing the solution for the css exercice
+
+---------------------------------------------------------------------------------------------------------------------------
+
+made by :
+    Gély Léandre :: https://github.com/Zaynn-lea
+
+date :
+    started      :  21 / 01 / 2025
+    last updated :  21 / 01 / 2025
+*/
+
+
+/********************\
+|   Global styling   |
+\********************/
+
+.exercice_solution {
+    display:               grid;
+    grid-template-rows:    auto;
+    grid-template-columns: 1fr 2fr;
+    min-height:            50vh;
+    gap:                   3%;
+}
+
+.exercice_solution div {
+    border:        .25em solid;
+    border-radius: 1em;
+}
+
+
+/************************\
+|   Individual styling   |
+\************************/
+
+/* Just colors and placement */
+
+#blue {
+    border-color: blue;
+    grid-row:     1;
+    grid-column:  1/3;
+}
+
+#red {
+    border-color: red;
+    grid-row:     2;
+}
+
+#green {
+    border-color: green;
+    grid-row:     2;
+}
+
+#yellow {
+    border-color: yellow;
+    grid-row:     3;
+    grid-column:  1/3;
+}

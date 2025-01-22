@@ -9,7 +9,7 @@ made by :
 
 date :
     started      :  17 / 01 / 2025
-    last updated :  18 / 01 / 2025
+    last updated :  21 / 01 / 2025
 */
 
 
@@ -116,10 +116,10 @@ nav ul {
     justify-content: space-around;
 }
 
-nav a {
-    display: block;
-}
 
+details ol {
+    display: inline;
+}
 
 /********************\
 |    Main Styling    |
