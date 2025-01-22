@@ -55,6 +55,13 @@ html {
     background-color: var(--BackgroundColor);
 }
 
+
+h6 {
+    font-size:       1em;
+    text-decoration: none;
+    color:           var(--TextColor);
+}
+
 a,
 a:visited {
     font-size:       normal;
@@ -78,24 +85,28 @@ a:focus {
 Use to get a nice thick rounded colorfull outline/border 
 Because if we are only using the border rule, we dan't get the stripes
 */
-div#border_banner {
+section#border_banner {
     background-color: var(--AccentColor0);
     border-radius:     2.25em;
     margin:            1em;
     padding:           1em;
 }
 
-div#border_banner h1 {
+section#border_banner h1 {
     background-color: var(--BackgroundColorInner);
     border-radius:    1em;
     padding-left:     15%;
+}
+
+h1 {
+    font-size: 2em;
 }
 
 
 /* make the stripes go under the titles
     they go only on the border */
 
-section.stripes {
+div.stripes {
     position: relative;
 }
 
@@ -141,11 +152,18 @@ main section {
     justify-content: space-evenly;
 }
 
-main article {
+main article,
+main fieldset {
     margin:        1em .5em;
     padding:       1em 4em;
     border:        .25em solid var(--AccentColor0Shade1);
     border-radius: 1em;
+}
+
+legend {
+    font-size:     1.8em;
+    padding-left:  .5em;
+    padding-right: .5em;
 }
 
 
