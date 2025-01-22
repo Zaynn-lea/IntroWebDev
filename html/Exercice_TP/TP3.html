@@ -9,7 +9,7 @@ made by :
 
 date :
     started      :  21 / 01 / 2025
-    last updated :  21 / 01 / 2025
+    last updated :  22 / 01 / 2025
 -->
 
 <!DOCTYPE html>
@@ -28,23 +28,23 @@ date :
     <title>TP3 - Gély Léandre</title>
 
 
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
 
-    <script defer type="text/javascript" src=""></script>
+    <script defer type="text/javascript" src="../../javascript/TP3/mode.js"></script>
 </head>
 
 <body>
 
     <header>
 
-        <div id="border_banner">
+        <section id="border_banner">
             <!-- Use to get a nice thick rounded colorfull outline/border 
              Because if we are only using the border rule, we dan't get rounded inner conrers-->
 
             <h1>Mystery Number</h1>
 
 
-            <section class="stripes">
+            <div class="stripes">
 
                 <svg class="stripes">
 
@@ -65,9 +65,10 @@ date :
     
                 </svg>    
 
-            </section>
+            </div>
 
-        </div>
+        </section>
+
 
         <nav>
             <ul>
@@ -81,15 +82,15 @@ date :
                     <details>
 
                         <summary>
-                            <p>Exercices</p>
+                            Exercices
                         </summary>
                         
                         <ol start="1">
-                            <li value="1">block positionment</li>
-                            <li value="3">Mystery number</li>
-                            <li>Random image</li>
-                            <li>Grocery List</li>
-                            <li>Roulette</li>
+                            <li value="1"><a href="Exercice1.html">block positionment</a></li>
+                            <li value="3"><a href="TP3.html">Mystery number</a></li>
+                            <li><a href="TP4.html">Random image</a></li>
+                            <li><a href="TP5.html">Grocery List</a></li>
+                            <li><a href="TP6.html">Roulette</a></li>
                         </ol>
 
                     </details>
@@ -104,7 +105,31 @@ date :
 
 
     <main>
-        <!-- TODO -->
+
+        <article>
+
+            <h2><a href="https://peter-banton.pedaweb.univ-amu.fr/intranet/3A/Intro_Dev_Web/TP/TP%203%20-%20Nombre%20mystere.pdf" target="_blank">Exercice statement</a></h2>
+
+        </article>
+
+
+        <fieldset>
+
+            <legend>Solution & Result :</legend>
+
+            <section id="tp3_solution">
+
+                <h3>choose your role :</h3>
+
+                <div>
+                    <button id="player_1_button">Player 1</button>
+                    <button id="player_2_button">Player 2</button>
+                </div>
+
+            </section>
+
+        </fieldset>
+
     </main>
 
 
@@ -112,7 +137,7 @@ date :
 
         <article>
 
-            <a href="#">Back to Top</a>
+            <h6><a href="#">Back to Top</a></h6>
 
         </article>
 
