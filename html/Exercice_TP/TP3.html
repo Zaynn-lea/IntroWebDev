@@ -31,7 +31,7 @@ date :
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/TP3.css">
 
-    <script defer type="text/javascript" src="../../javascript/TP3/mode.js"></script>
+    <script type="module" src="../../javascript/TP3/mode.js"></script>
 </head>
 
 <body>
@@ -123,22 +123,31 @@ date :
                 <h3 id="game_title"></h3>
 
 
-                <div id="mode_choice" class="hidden">
+                <div id="mode_choice">
                     <button id="player_1_button">Player 1</button>
                     <button id="player_2_button">Player 2</button>
                 </div>
 
 
-                <div id="player_1" class="hidden">
+                <div id="player_1">
+                    <button id="smaller_button">The number is smaller</button>
+                    <button id="found_button">This is my number !</button>
+                    <button id="bigger_button">The number is bigger</button>
+                </div>
+
+
+                <div id="player_2">
                     <button id="player_1_button">Player 1</button>
                     <button id="player_2_button">Player 2</button>
                 </div>
 
 
-                <div id="player_2" class="hidden">
-                    <button id="player_1_button">Player 1</button>
-                    <button id="player_2_button">Player 2</button>
-                </div>
+                <!--
+                Separated to avoid cyclic import
+                Otherwise we would need to import modes.js in player1.js and player2.js
+                -->
+
+                <button id="mode_button">Back to mode</button>
 
 
             </section>

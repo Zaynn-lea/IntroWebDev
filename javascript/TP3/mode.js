@@ -17,7 +17,7 @@ date :
 */
 
 
-// import player1Handler from "./modes/player1.js";
+import { player1Handler } from "./modes/player1.js";
 // import player2Handler from "./modes/player2.js";
 
 
@@ -25,7 +25,8 @@ date :
 
 (function () {
     var player1Button = document.getElementById("player_1_button"),
-        player2Button = document.getElementById("player_2_button");
+        player2Button = document.getElementById("player_2_button"),
+        modeButton    = document.getElementById("mode_button");
 
     var gameTitle = document.getElementById("game_title");
 
@@ -41,13 +42,16 @@ date :
         // Hiding the section we don't need 
         player1Section.classList.add("hidden");
         player2Section.classList.add("hidden");
+        modeButton.classList.add("hidden");
 
         // Making sure we see the correct section
         modeChoiceSection.classList.remove("hidden");
     }
 
+
     player1Button.addEventListener("click", function (e) { player1Handler(e) });
     player2Button.addEventListener("click", function (e) { player2Handler(e) });
+    modeButton.addEventListener("click", function (e) { createLayout(e) });
 
     createLayout();
 })()
