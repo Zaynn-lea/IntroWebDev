@@ -9,7 +9,7 @@ made by :
 
 date :
     started      :  21 / 01 / 2025
-    last updated :  22 / 01 / 2025
+    last updated :  26 / 01 / 2025
 -->
 
 <!DOCTYPE html>
@@ -29,6 +29,7 @@ date :
 
 
     <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/TP3.css">
 
     <script defer type="text/javascript" src="../../javascript/TP3/mode.js"></script>
 </head>
@@ -72,9 +73,9 @@ date :
 
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="links.html">Links</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../cv.html">CV</a></li>
+                <li><a href="../form.htmllinks.html">Links</a></li>
                 <li>
 
                     <!-- TODO : Redo in javascript to be pretier and easier to style -->
@@ -96,8 +97,8 @@ date :
                     </details>
 
                 </li>
-                <li><a href="form.html">Form</a></li>
-                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="../form.html">Form</a></li>
+                <li><a href="../quiz.html">Quiz</a></li>
             </ul>
         </nav>
 
@@ -117,14 +118,28 @@ date :
 
             <legend>Solution & Result :</legend>
 
-            <section id="tp3_solution">
+            <section>
 
-                <h3>choose your role :</h3>
+                <h3 id="game_title"></h3>
 
-                <div>
+
+                <div id="mode_choice" class="hidden">
                     <button id="player_1_button">Player 1</button>
                     <button id="player_2_button">Player 2</button>
                 </div>
+
+
+                <div id="player_1" class="hidden">
+                    <button id="player_1_button">Player 1</button>
+                    <button id="player_2_button">Player 2</button>
+                </div>
+
+
+                <div id="player_2" class="hidden">
+                    <button id="player_1_button">Player 1</button>
+                    <button id="player_2_button">Player 2</button>
+                </div>
+
 
             </section>
 

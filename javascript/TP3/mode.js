@@ -13,11 +13,12 @@ made by :
 
 date :
     started      :  22 / 01 / 2025
-    last updated :  22 / 01 / 2025
+    last updated :  26 / 01 / 2025
 */
 
 
-import "./mode/player1.js";
+// import player1Handler from "./modes/player1.js";
+// import player2Handler from "./modes/player2.js";
 
 
 // We encapsulate it in an anonymous function to avoid namespace conflict
@@ -26,22 +27,27 @@ import "./mode/player1.js";
     var player1Button = document.getElementById("player_1_button"),
         player2Button = document.getElementById("player_2_button");
 
+    var gameTitle = document.getElementById("game_title");
 
-    function chooseModeHandler(e, player_number) {
-        // No need for a case statement since we wont add new cases in the futur
+    var modeChoiceSection = document.getElementById("mode_choice"),
+        player1Section    = document.getElementById("player_1"),
+        player2Section    = document.getElementById("player_2");
 
-        if (player_number == 1) {
-            // The computer has to find the user's number
-        }
-        else if (player_number == 2) {
-            // The User has to find the user's number
-        }
-        else {
-            // There's a problem, for now let's do nothing
-        }
+
+    function createLayout () {
+        gameTitle.innerHTML = "Mode selection :";
+
+
+        // Hiding the section we don't need 
+        player1Section.classList.add("hidden");
+        player2Section.classList.add("hidden");
+
+        // Making sure we see the correct section
+        modeChoiceSection.classList.remove("hidden");
     }
 
+    player1Button.addEventListener("click", function (e) { player1Handler(e) });
+    player2Button.addEventListener("click", function (e) { player2Handler(e) });
 
-    player1Button.addEventListener("click", function (e) { chooseModeHandler(e, 1) });
-    player2Button.addEventListener("click", function (e) { chooseModeHandler(e, 2) });
+    createLayout();
 })()
