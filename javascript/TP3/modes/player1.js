@@ -26,8 +26,8 @@ export function player1Handler(e) {
         modeButton    = document.getElementById("mode_button");
 
     var gameTitle = document.getElementById("game_title"),
-        dialogBox = document.getElementById("dialog_box"),
-        endDialog = document.getElementById("end_dialog");
+        dialogBox = document.getElementById("dialog_box_output"),
+        endDialog = document.getElementById("end_dialog_1");
 
     var modeChoiceSection = document.getElementById("mode_choice"),
         player1Section    = document.getElementById("player_1"),

@@ -9,7 +9,7 @@ made by :
 
 date :
     started      :  17 / 01 / 2025
-    last updated :  22 / 01 / 2025
+    last updated :  27 / 01 / 2025
 */
 
 
@@ -73,6 +73,16 @@ a:hover,
 a:focus {
     text-decoration: underline;
     cursor:          pointer;
+}
+
+
+/**********************************\
+|    Additionnal Useful Styling    |
+\**********************************/
+
+
+.hidden {
+    display: none;
 }
 
 

@@ -29,7 +29,6 @@ date :
 
 
     <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/TP3.css">
 
     <script type="module" src="../../javascript/TP3/mode.js"></script>
 </head>
@@ -132,9 +131,10 @@ date :
                 <div id="player_1">
                     <p>Think of a number between 0 and 100.</p>
 
-                    <p id="dialog_box"></p>
+                    <p id="dialog_box_output"></p>
 
-                    <p id="end_dialog">(Press any button to play again.)</p>
+                    <!-- we have to put a one because ids are unique -->
+                    <p id="end_dialog_1">(Press any button to play again.)</p>
 
                     <button id="smaller_button">The number is smaller</button>
                     <button id="found_button">This is my number !</button>
@@ -143,8 +143,16 @@ date :
 
 
                 <div id="player_2">
-                    <button id="player_1_button">Player 1</button>
-                    <button id="player_2_button">Player 2</button>
+                    <p>I am thinking of a number between 0 and 100, try to find it:</p>
+
+                    <p id="game_status"></p>
+
+                    <!-- same here, ids are have to be unique -->
+                    <p id="end_dialog_2">(Press any button to play again.)</p>
+
+                    <input id="dialog_box_input" type="text">
+
+                    <button id="submit_button">Submit</button>
                 </div>
 
 

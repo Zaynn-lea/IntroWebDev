@@ -18,7 +18,7 @@ date :
 
 
 import { player1Handler } from "./modes/player1.js";
-// import player2Handler from "./modes/player2.js";
+import { player2Handler } from "./modes/player2.js";
 
 
 // We encapsulate it in an anonymous function to avoid namespace conflict
