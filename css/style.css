@@ -55,13 +55,6 @@ html {
     background-color: var(--BackgroundColor);
 }
 
-
-h6 {
-    font-size:       1em;
-    text-decoration: none;
-    color:           var(--TextColor);
-}
-
 a,
 a:visited {
     font-size:       normal;

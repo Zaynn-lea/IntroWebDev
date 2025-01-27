@@ -49,10 +49,10 @@ import { player2Handler } from "./modes/player2.js";
     }
 
 
-    player1Button.addEventListener("click", function (e) { player1Handler() });
-    player2Button.addEventListener("click", function (e) { player2Handler() });
+    player1Button.addEventListener("click", function (event) { player1Handler() });
+    player2Button.addEventListener("click", function (event) { player2Handler() });
 
-    modeButton.addEventListener("click", function (e) { createLayout() });
+    modeButton.addEventListener("click", function (event) { createLayout() });
 
     createLayout();
 })()

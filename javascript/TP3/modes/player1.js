@@ -104,9 +104,9 @@ export function player1Handler() {
     }
 
 
-    smallerButton.addEventListener("click", function (e) { smaller() });
-    foundButton.addEventListener("click",   function (e) { found() });
-    biggerButton.addEventListener("click",  function (e) { bigger() });
+    smallerButton.addEventListener("click", function (event) { smaller() });
+    foundButton.addEventListener("click",   function (event) { found() });
+    biggerButton.addEventListener("click",  function (event) { bigger() });
 
     createLayout();
 }

@@ -99,7 +99,7 @@ export function player2Handler() {
     }
 
 
-    submitButton.addEventListener("click", function (e) { submit() });
+    submitButton.addEventListener("click", function (event) { submit() });
 
     createLayout();
 }
