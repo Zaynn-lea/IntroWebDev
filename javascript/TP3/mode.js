@@ -13,7 +13,7 @@ made by :
 
 date :
     started      :  22 / 01 / 2025
-    last updated :  26 / 01 / 2025
+    last updated :  27 / 01 / 2025
 */
 
 
@@ -51,6 +51,7 @@ import { player1Handler } from "./modes/player1.js";
 
     player1Button.addEventListener("click", function (e) { player1Handler(e) });
     player2Button.addEventListener("click", function (e) { player2Handler(e) });
+
     modeButton.addEventListener("click", function (e) { createLayout(e) });
 
     createLayout();
