@@ -19,7 +19,7 @@ date :
 //  and because we need all of it as once
 //  but it will never be called outside of the scope of player1Handler()
 
-export function player2Handler(e) {
+export function player2Handler() {
     var submitButton = document.getElementById("submit_button"),
         modeButton   = document.getElementById("mode_button");
 
@@ -58,6 +58,7 @@ export function player2Handler(e) {
         modeButton.classList.remove("hidden");
 
         dialogBox.innerHTML = "";
+        input.value         = "";
     }
 
 
@@ -75,7 +76,7 @@ export function player2Handler(e) {
         createLayout();
     }
 
-    function submit(e) {
+    function submit() {
         guessedNumber = input.value;
 
         if (isFound) { reset(); }
@@ -98,7 +99,7 @@ export function player2Handler(e) {
     }
 
 
-    submitButton.addEventListener("click", function (e) { submit(e) });
+    submitButton.addEventListener("click", function (e) { submit() });
 
     createLayout();
 }

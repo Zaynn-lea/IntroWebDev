@@ -19,7 +19,7 @@ date :
 //  and because we need all of it as once
 //  but it will never be called outside of the scope of player1Handler()
 
-export function player1Handler(e) {
+export function player1Handler() {
     var smallerButton = document.getElementById("smaller_button"),
         foundButton   = document.getElementById("found_button"),
         biggerButton  = document.getElementById("bigger_button"),
@@ -74,7 +74,7 @@ export function player1Handler(e) {
         createLayout();
     }
 
-    function smaller(e) {
+    function smaller() {
         if (isFound) { reset(); }
         else         {
             upper = guessedNumber;
@@ -84,7 +84,7 @@ export function player1Handler(e) {
         }
     }
 
-    function found(e) {
+    function found() {
         dialogBox.innerHTML = "I found it, it was : " + guessedNumber;
 
         endDialog.classList.remove("hidden");
@@ -93,7 +93,7 @@ export function player1Handler(e) {
         else       { isFound = true; }
     }
 
-    function bigger(e) {
+    function bigger() {
         if (isFound) { reset(); }
         else         {
             lower = guessedNumber;
@@ -104,9 +104,9 @@ export function player1Handler(e) {
     }
 
 
-    smallerButton.addEventListener("click", function (e) { smaller(e) });
-    foundButton.addEventListener("click",   function (e) { found(e) });
-    biggerButton.addEventListener("click",  function (e) { bigger(e) });
+    smallerButton.addEventListener("click", function (e) { smaller() });
+    foundButton.addEventListener("click",   function (e) { found() });
+    biggerButton.addEventListener("click",  function (e) { bigger() });
 
     createLayout();
 }

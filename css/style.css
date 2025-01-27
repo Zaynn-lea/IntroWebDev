@@ -154,8 +154,6 @@ main {
     border-right:     var(--BackgroundColorInner);
 }
 
-/*  TODO : Make it prettier  */
-
 main section {
     display:         flex;
     flex-wrap:       wrap;
@@ -174,6 +172,17 @@ legend {
     font-size:     1.8em;
     padding-left:  .5em;
     padding-right: .5em;
+}
+
+
+button,
+input {
+    border:           .25em solid var(--AccentColor0Shade2);
+    border-radius:    1em;
+    padding:          .5em 1em;
+    background-color: var(--BackgroundColorInner);
+    color:            var(--TextColor);
+    font-size:        1rem;
 }
 
 

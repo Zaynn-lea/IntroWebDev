@@ -1,0 +1,25 @@
+
+/*
+style sheet to space the layout of the number guessing game
+
+---------------------------------------------------------------------------------------------------------------------------
+
+made by :
+    Gély Léandre :: https://github.com/Zaynn-lea
+
+date :
+    started      :  27 / 01 / 2025
+    last updated :  27 / 01 / 2025
+*/
+
+
+.TP_solution {
+    display:    block;
+    text-align: center;
+}
+
+.TP_solution div,
+.TP_solution p,
+.TP_solution button {
+    margin: .25em;
+}
