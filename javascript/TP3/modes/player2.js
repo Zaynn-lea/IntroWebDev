@@ -99,7 +99,8 @@ export function player2Handler() {
     }
 
 
-    submitButton.addEventListener("click", function (e) { submit() });
+    submitButton.addEventListener("click", function (event) { submit() });
+    dialogBox.addEventListener("keyup", function (event) { if (event.key === "Enter") { submit() } });
 
     createLayout();
 }
