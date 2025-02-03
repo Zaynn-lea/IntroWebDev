@@ -9,7 +9,7 @@ made by :
 
 date :
     started      :  17 / 01 / 2025
-    last updated :  27 / 01 / 2025
+    last updated :  03 / 02 / 2025
 */
 
 
@@ -159,6 +159,11 @@ main fieldset {
     padding:       1em 4em;
     border:        .25em solid var(--AccentColor0Shade1);
     border-radius: 1em;
+}
+
+main fieldset {
+    /* To balance the offset from the legend title */
+    margin-bottom: 2em;
 }
 
 legend {

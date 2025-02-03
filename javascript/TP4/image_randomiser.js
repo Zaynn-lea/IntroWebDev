@@ -13,6 +13,9 @@ date :
 */
 
 
+// TODO : List of image
+
+
 // We encapsulate it in an anonymous function to avoid namespace conflict
 
 (function () {
@@ -20,10 +23,10 @@ date :
 
 
     function randomiseHandler () {
-
+        // TODO
     }
 
-    
+
     randomButton.addEventListener("click", function (event) { randomiseHandler() });
 
     createLayout();

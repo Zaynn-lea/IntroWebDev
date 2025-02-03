@@ -20,6 +20,7 @@ date :
 
 .TP_solution div,
 .TP_solution p,
-.TP_solution button {
+.TP_solution button,
+.TP_solution input {
     margin: .25em;
 }
