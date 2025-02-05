@@ -9,7 +9,7 @@ made by :
 
 date :
     started      :  17 / 01 / 2025
-    last updated :  03 / 02 / 2025
+    last updated :  05 / 02 / 2025
 */
 
 
@@ -135,6 +135,22 @@ details ol {
     display: inline;
 }
 
+header * button {
+    /* To make it blend with the links */
+    
+    margin:  0em;
+    padding: 0em;
+    border:  none;
+}
+
+header * summary:hover,
+header * summary:focus,
+header * button:hover,
+header * button:focus {
+    text-decoration: underline;
+    cursor:          pointer;
+}
+
 /********************\
 |    Main Styling    |
 \********************/
@@ -161,9 +177,15 @@ main fieldset {
     border-radius: 1em;
 }
 
+main article {
+    /* To balance the offset from the legend title of fieldset */
+    margin-top:    1.5em;
+    margin-bottom: 1.5em;
+}
+
 main fieldset {
     /* To balance the offset from the legend title */
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
 }
 
 legend {

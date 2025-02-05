@@ -28,6 +28,4 @@ date :
 
 
     randomButton.addEventListener("click", function (event) { randomiseHandler() });
-
-    createLayout();
-})()
+})();

@@ -1,0 +1,30 @@
+
+{
+    "dark" : {
+        "next" :      "light",
+        "variables" : {
+            "--TextColor" :            "#EEF1EF",
+            "--BackgroundColorInner" : "#0E1211",
+            "--BackgroundColor" :      "#090C0B",
+
+            "--AccentColor0" :       "#6D52B7",
+            "--AccentColor0Shade1" : "#A06CD5",
+            "--AccentColor0Shade2" : "#CA9CE1",
+            "--AccentColor0Shade3" : "#E2CFEA"
+        }
+    },
+
+    "light" : {
+        "next" :      "dark",
+        "variables" : {
+            "--TextColor" :            "#EEF1EF",
+            "--BackgroundColorInner" : "#0E1211",
+            "--BackgroundColor" :      "#090C0B",
+
+            "--AccentColor0" :       "#6D52B7",
+            "--AccentColor0Shade1" : "#A06CD5",
+            "--AccentColor0Shade2" : "#CA9CE1",
+            "--AccentColor0Shade3" : "#E2CFEA"
+        }
+    }
+}

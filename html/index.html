@@ -11,7 +11,7 @@ made by :
 
 date :
     started      :  17 / 01 / 2025
-    last updated :  22 / 01 / 2025
+    last updated :  05 / 02 / 2025
 -->
 
 <!DOCTYPE html>
@@ -32,7 +32,7 @@ date :
 
     <link rel="stylesheet" href="../css/style.css">
 
-    <script defer type="text/javascript" src=""></script>
+    <script defer type="text/javascript" src="../javascript/Theme/theme_handler.js"></script>
 </head>
 
 <body>
@@ -42,11 +42,13 @@ date :
         <section id="border_banner">
             <!-- Use to get a nice thick rounded colorfull outline/border 
              Because if we are only using the border rule, we dan't get rounded inner conrers-->
-
+            
             <h1>Gély Léandre</h1>
 
 
-            <div class="stripes">
+            <!-- TODO : Find a better way -->
+
+            <!-- <div class="stripes">
 
                 <svg class="stripes">
 
@@ -67,7 +69,7 @@ date :
     
                 </svg>    
 
-            </div>
+            </div> -->
 
         </section>
 
@@ -100,6 +102,7 @@ date :
                 </li>
                 <li><a href="form.html">Form</a></li>
                 <li><a href="quiz.html">Quiz</a></li>
+                <li><button id="theme_button">Theme : <span id="theme_display">dark</span></button></li>
             </ul>
         </nav>
 
