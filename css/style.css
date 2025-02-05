@@ -124,16 +124,18 @@ path#stripe1 {  fill: var(--AccentColor0Shade2);  }
 path#stripe2 {  fill: var(--AccentColor0Shade3);  }
 
 
-nav ul {
+nav ul,
+nav * ol {
     list-style:      none;
     display:         flex;
     justify-content: space-around;
 }
 
-
-details ol {
-    display: inline;
+nav div {
+    border-top: .175em solid var(--AccentColor0Shade1);
+    margin:     0.25em;
 }
+
 
 header * button {
     /* To make it blend with the links */
@@ -143,8 +145,6 @@ header * button {
     border:  none;
 }
 
-header * summary:hover,
-header * summary:focus,
 header * button:hover,
 header * button:focus {
     text-decoration: underline;

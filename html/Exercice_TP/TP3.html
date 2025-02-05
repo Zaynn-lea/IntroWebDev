@@ -9,7 +9,7 @@ made by :
 
 date :
     started      :  21 / 01 / 2025
-    last updated :  27 / 01 / 2025
+    last updated :  05 / 02 / 2025
 -->
 
 <!DOCTYPE html>
@@ -30,6 +30,9 @@ date :
 
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/TP/TP.css">
+
+    <script defer type="text/javascript" src="../../javascript/Theme/theme_handler.js"></script>
+    <script defer type="text/javascript" src="../../javascript/nav_bar_handler.js"></script>
 
     <script type="module" src="../../javascript/TP3/mode.js"></script>
 </head>
@@ -71,35 +74,28 @@ date :
         </section>
 
 
+       
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../cv.html">CV</a></li>
                 <li><a href="../links.html">Links</a></li>
-                <li>
-
-                    <!-- TODO : Redo in javascript to be pretier and easier to style -->
-
-                    <details>
-
-                        <summary>
-                            Exercices
-                        </summary>
-                        
-                        <ol start="1">
-                            <li value="1"><a href="Exercice1.html">block positionment</a></li>
-                            <li value="3"><a href="TP3.html">Mystery number</a></li>
-                            <li><a href="TP4.html">Random image</a></li>
-                            <li><a href="TP5.html">Grocery List</a></li>
-                            <li><a href="TP6.html">Roulette</a></li>
-                        </ol>
-
-                    </details>
-
-                </li>
+                <li><button id="sub_nav_bar_button">Exercice</button></li>
                 <li><a href="../form.html">Form</a></li>
                 <li><a href="../quiz.html">Quiz</a></li>
+                <li><button id="theme_button">Theme : <span id="theme_display">dark</span></button></li>
             </ul>
+
+            <div id="sub_nav_bar">
+                <!-- The div is needed because we want to giv different display property to div and ol -->
+                <ol>
+                    <li value="1"><a href="Exercice1.html">block positionment</a></li>
+                    <li value="3"><a href="TP3.html">Mystery number</a></li>
+                    <li><a href="TP4.html">Random image</a></li>
+                    <li><a href="TP5.html">Grocery List</a></li>
+                    <li><a href="TP6.html">Roulette</a></li>
+                </ol>
+            </div>
         </nav>
 
     </header>
