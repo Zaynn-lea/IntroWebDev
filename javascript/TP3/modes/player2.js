@@ -11,7 +11,7 @@ made by :
 
 date :
     started      :  22 / 01 / 2025
-    last updated :  27 / 01 / 2025
+    last updated :  05 / 02 / 2025
 */
 
 
@@ -100,7 +100,7 @@ export function player2Handler() {
 
 
     submitButton.addEventListener("click", function (event) { submit() });
-    dialogBox.addEventListener("keypress", function (event) { if (event.key === "Enter") { submit() } });
+    input.addEventListener("keydown", function (event) { if (event.key.toLowerCase() == "enter") { submit() } });
 
     createLayout();
 }
