@@ -2,6 +2,8 @@
 /*
 TP 5 : Interactive Grocery List
 
+It's a mix of Exercice 1 and 2, merging both functionalities
+
 ___________________________________________________________________________________________________________________________
 
 made by :
@@ -17,8 +19,10 @@ date :
 
 (function () {
     var clearButton = document.getElementById("clear_button"),
-        input       = document.getElementById("input_box"),
-        listBox     = document.getElementById("list_box");
+        addButton   = document.getElementById("add_button");
+
+    var input   = document.getElementById("input_box"),
+        listBox = document.getElementById("list_box");
 
 
     function submit() {
@@ -26,7 +30,8 @@ date :
         if (input.value) {
             var newItem = document.createElement("li");
 
-            newItem.innerHTML = input.value;
+            newItem.innerHTML = "<button><i class=\"fa-solid fa-trash-can\"></i></button> " + input.value;
+            newItem.addEventListener("click", function (event) {event.target.parentNode.parentNode.remove()});
 
             listBox.appendChild(newItem);
 
@@ -45,6 +50,8 @@ date :
     }
 
     
-    clearButton.addEventListener("click", function (event) { reset() });
+    clearButton.addEventListener("click", function (event) { reset()  });
+    addButton.addEventListener("click",   function (event) { submit() });
+
     input.addEventListener("keydown", function (event) { if (event.key.toLowerCase() == "enter") { submit() } });
 })();
