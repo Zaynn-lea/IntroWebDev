@@ -86,6 +86,7 @@ export function player2Handler() {
 
             dialogBox.innerHTML = "You guessed right ! The number was : " + numberToGuess;
 
+            // Showin the message we kept from when the player finally find the number
             endDialog.classList.remove("hidden");
         }
         else if (guessedNumber > numberToGuess)  {

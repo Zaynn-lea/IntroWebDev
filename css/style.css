@@ -9,7 +9,7 @@ made by :
 
 date :
     started      :  17 / 01 / 2025
-    last updated :  05 / 02 / 2025
+    last updated :  17 / 02 / 2025
 */
 
 
@@ -203,6 +203,11 @@ input {
     background-color: var(--BackgroundColorInner);
     color:            var(--TextColor);
     font-size:        1rem;
+}
+
+button:hover {
+    border-color: var(--AccentColor0Shade3);
+    cursor:       pointer;
 }
 
 

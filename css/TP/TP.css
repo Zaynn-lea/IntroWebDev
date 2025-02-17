@@ -9,9 +9,13 @@ made by :
 
 date :
     started      :  27 / 01 / 2025
-    last updated :  27 / 01 / 2025
+    last updated :  17 / 02 / 2025
 */
 
+
+/***********************\
+|    General Styling    |
+\***********************/
 
 .TP_solution {
     display:    block;
@@ -23,4 +27,9 @@ date :
 .TP_solution button,
 .TP_solution input {
     margin: .25em;
+}
+
+/*  for TP5  */
+.TP_solution * ul {
+    list-style: none;
 }
