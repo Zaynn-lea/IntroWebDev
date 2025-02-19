@@ -17,14 +17,14 @@
     "light" : {
         "next" :      "dark",
         "variables" : {
-            "--TextColor" :            "#EEF1EF",
-            "--BackgroundColorInner" : "#0E1211",
-            "--BackgroundColor" :      "#090C0B",
+            "--TextColor" :            "#090C0B",
+            "--BackgroundColorInner" : "#C4C8C6",
+            "--BackgroundColor" :      "#B6BAB8",
 
-            "--AccentColor0" :       "#6D52B7",
-            "--AccentColor0Shade1" : "#A06CD5",
-            "--AccentColor0Shade2" : "#CA9CE1",
-            "--AccentColor0Shade3" : "#E2CFEA"
+            "--AccentColor0" :       "#B28BD4",
+            "--AccentColor0Shade1" : "#AB93C7",
+            "--AccentColor0Shade2" : "#C0ABCD",
+            "--AccentColor0Shade3" : "#CBB1D9"
         }
     }
 }

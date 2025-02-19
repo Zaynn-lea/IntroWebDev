@@ -8,7 +8,7 @@ made by :
 
 date :
     started      :  03 / 02 / 2025
-    last updated :  05 / 02 / 2025
+    last updated :  16 / 02 / 2025
 */
 
 
@@ -35,7 +35,7 @@ date :
 
         themeDisplay.innerHTML = themeState;
 
-        for (const cssVariables in themesjson[themeState])
+        for (const cssVariables in themesjson[themeState]["variables"])
             root_variables.style.setProperty(cssVariables, themesjson[themeState]["variables"][cssVariables]);
     }
 

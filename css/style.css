@@ -9,7 +9,7 @@ made by :
 
 date :
     started      :  17 / 01 / 2025
-    last updated :  17 / 02 / 2025
+    last updated :  19 / 02 / 2025
 */
 
 
@@ -104,25 +104,6 @@ section#border_banner h1 {
 h1 {
     font-size: 2em;
 }
-
-
-/* make the stripes go under the titles
-    they go only on the border */
-
-div.stripes {
-    position: relative;
-}
-
-svg.stripes {
-    position: absolute;
-    top:      -3.90em;
-    right:    0em;
-}
-
-path#stripe0 {  fill: var(--AccentColor0Shade1);  }
-path#stripe1 {  fill: var(--AccentColor0Shade2);  }
-path#stripe2 {  fill: var(--AccentColor0Shade3);  }
-
 
 nav ul,
 nav * ol {
