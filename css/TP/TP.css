@@ -29,6 +29,31 @@ date :
     margin: .25em;
 }
 
+/* for TP4 */
+#TP4 {
+    display: flex;
+    justify-content: center;
+}
+
+#TP4 * {
+    display:      block;
+    margin-block: .3em;
+}
+
+#TP4 img {
+    width:            70%;
+    border:           .25em solid var(--AccentColor0Shade2);
+    border-radius:    1em;
+    background-color: var(--BackgroundColorInner);
+    color:            var(--TextColor);
+    font-size:        1rem;
+}
+
+#TP4 img:hover {
+    border-color: var(--AccentColor0Shade3);
+    cursor:       pointer;
+}
+
 /*  for TP5  */
 .TP_solution * ul {
     list-style: none;
