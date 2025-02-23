@@ -9,7 +9,7 @@ made by :
 
 date :
     started      :  17 / 01 / 2025
-    last updated :  19 / 02 / 2025
+    last updated :  23 / 02 / 2025
 */
 
 
@@ -177,7 +177,8 @@ legend {
 
 
 button,
-input {
+input,
+textarea {
     border:           .25em solid var(--AccentColor0Shade2);
     border-radius:    1em;
     padding:          .5em 1em;
@@ -189,6 +190,25 @@ input {
 button:hover {
     border-color: var(--AccentColor0Shade3);
     cursor:       pointer;
+}
+
+input:hover,
+textarea:hover {
+    border-color: var(--AccentColor0Shade3);
+}
+
+
+form {
+    /* centers it nicely */
+    margin-right:          25%;
+    display:               grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:    repeat(5, 1fr);
+}
+
+/* To select only the even numbered elements indexed at 0, aka the labels */
+form:nth-child(2n) {
+    text-align: right;
 }
 
 
