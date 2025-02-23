@@ -1,0 +1,58 @@
+
+{
+    "1" : {
+        "prev" :    null,
+        "next" :    "2",
+        "type" :    "radio",
+        "answers" : [
+            "q_1__a_1",
+            "q_1__a_2",
+            "q_1__a_3",
+            "q_1__a_4"
+        ],
+        "correct" : [
+            "q_1__a_4"
+        ]
+    },
+
+    "2" : {
+        "prev" :    "1",
+        "next" :    "3",
+        "type" :    "check",
+        "answers" : [
+            "q_2__a_1",
+            "q_2__a_2",
+            "q_2__a_3",
+            "q_2__a_4",
+            "q_2__a_5",
+            "q_2__a_6"
+        ],
+        "correct" : [
+            "q_2__a_1",
+            "q_2__a_3",
+            "q_2__a_4",
+            "q_2__a_6"
+        ]
+    },
+    "3" : {
+        "prev" :    "2",
+        "next" :    "-1",
+        "type" :    "select",
+        "answers" : [
+            "1_elt_input",
+            "2_elt_input",
+            "3_elt_input",
+            "4_elt_input",
+            "5_elt_input",
+            "6_elt_input"
+        ],
+        "correct" : [
+            "Mic",
+            "Preamp",
+            "Comp",
+            "EQ",
+            "Sum",
+            "Tape"
+        ]
+    }
+}

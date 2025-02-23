@@ -178,7 +178,8 @@ legend {
 
 button,
 input,
-textarea {
+textarea,
+select {
     border:           .25em solid var(--AccentColor0Shade2);
     border-radius:    1em;
     padding:          .5em 1em;
@@ -187,7 +188,8 @@ textarea {
     font-size:        1rem;
 }
 
-button:hover {
+button:hover,
+select:hover {
     border-color: var(--AccentColor0Shade3);
     cursor:       pointer;
 }
@@ -195,6 +197,10 @@ button:hover {
 input:hover,
 textarea:hover {
     border-color: var(--AccentColor0Shade3);
+}
+
+.TP_solution * input:hover {
+    cursor: pointer;
 }
 
 
@@ -209,6 +215,19 @@ form {
 /* To select only the even numbered elements indexed at 0, aka the labels */
 form:nth-child(2n) {
     text-align: right;
+}
+
+
+div.quiz_ans {
+    padding:         1em;
+    display:         flex;
+    flex-direction:  column;
+    justify-content: space-between;
+}
+
+div.quiz_nav {
+    display:         flex;
+    justify-content: space-between;
 }
 
 

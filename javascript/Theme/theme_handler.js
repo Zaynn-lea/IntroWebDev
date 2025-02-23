@@ -37,6 +37,9 @@ date :
 
         for (const cssVariables in themesjson[themeState]["variables"])
             root_variables.style.setProperty(cssVariables, themesjson[themeState]["variables"][cssVariables]);
+
+        if (themeState == "light")
+            alert("Sorry for this horrible 2nd color scheme...");
     }
 
 

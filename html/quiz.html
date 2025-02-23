@@ -11,7 +11,7 @@ made by :
 
 date :
     started      :  21 / 01 / 2025
-    last updated :  19 / 02 / 2025
+    last updated :  23 / 02 / 2025
 -->
 
 <!DOCTYPE html>
@@ -34,6 +34,8 @@ date :
 
     <script defer type="text/javascript" src="../javascript/Theme/theme_handler.js"></script>
     <script defer type="text/javascript" src="../javascript/nav_bar_handler.js"></script>
+
+    <script defer type="text/javascript" src="../javascript/quiz/quiz_handler.js"></script>
 </head>
 
 <body>
@@ -75,7 +77,230 @@ date :
     
     
     <main>
-        <!-- TODO -->
+        
+        <fieldset>
+
+            <legend>Music Gear Quiz</legend>
+
+
+            <section class="TP_solution">
+
+                <h2>Let's test your knowledge :</h2>
+
+
+                <!--
+                    Since we need uniques ids for each possible answer, 
+                    let's use this code :
+                    " q_1__a_1 " means : " answer 1 of question 1 "
+                -->
+
+
+                <article class="question_slides" id="question_1">
+
+                    <h3>Question 1 :</h3>
+
+                    <p>
+                        What is the correct amount of audio/music gear to own ?
+                    </p>
+
+                    <div class="quiz_ans">
+                        <div>
+                            <input type="radio" name="question 1" id="q_1__a_1">
+                            <label for="q_1__a_1">What you already have</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question 1" id="q_1__a_2">
+                            <label for="q_1__a_2">0 to 10</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question 1" id="q_1__a_3">
+                            <label for="q_1__a_3">10 to 100</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question 1" id="q_1__a_4">
+                            <label for="q_1__a_4">One more than what you currently have</label>
+                        </div>
+                    </div>
+
+                    <div class="quiz_nav">
+                        <div>
+                            <!-- To have the next button at the right most of the question card -->
+                        </div>
+                        <button class="next">Next</button>
+                    </div>
+
+                </article>
+
+
+                <article class="question_slides" id="question_2">
+
+                    <h3>Question 2 :</h3>
+
+                    <p>
+                        which of the following are instruments ?
+                    </p>
+
+                    <div class="quiz_ans">
+                        <div>
+                            <input type="checkbox" name="answer 1" id="q_2__a_1">
+                            <label for="answer 1">Synthesizer</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="answer 2" id="q_2__a_2">
+                            <label for="answer 2">Filter</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="answer 3" id="q_2__a_3">
+                            <label for="answer 3">Guitar and Bass</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="answer 4" id="q_2__a_4">
+                            <label for="answer 4">Shaker</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="answer 5" id="q_2__a_5">
+                            <label for="answer 5">Frying pan</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="answer 6" id="q_2__a_6">
+                            <label for="answer 6">Drum</label>
+                        </div>
+                    </div>
+
+                    <div class="quiz_nav">
+                        <button class="prev">Prev</button>
+                        <button class="next">Next</button>
+                    </div>
+
+                </article>
+
+
+                <article class="question_slides" id="question_3">
+
+                    <h3>Question 3 :</h3>
+
+                    <p>
+                        What's the most common recording signal chain ?
+                    </p>
+
+                    <div class="quiz_ans">
+                        
+                        <select name="signal chain" id="1_elt_input">
+
+                            <option value="">First element</option>
+
+                            <option value="Tape">Conversion-to-digital/Tape</option>make your choice ::</option>
+                            <option value="Mic">Microphone/Instrument</option>
+                            <option value="Comp">Compressor</option>
+                            <option value="EQ">Equalisation</option>
+                            <option value="Broadcast">Broadcasting</option>
+                            <option value="Preamp">Preamplificator</option>
+                            <option value="Sum">Summing</option>
+
+                        </select>
+                        
+                        <select name="signal chain" id="2_elt_input">
+
+                            <option value="">Second element</option>
+
+                            <option value="Tape">Conversion-to-digital/Tape</option>make your choice ::</option>
+                            <option value="Mic">Microphone/Instrument</option>
+                            <option value="Comp">Compressor</option>
+                            <option value="EQ">Equalisation</option>
+                            <option value="Broadcast">Broadcasting</option>
+                            <option value="Preamp">Preamplificator</option>
+                            <option value="Sum">Summing</option>
+
+                        </select>
+                        
+                        <select name="signal chain" id="3_elt_input">
+
+                            <option value="">third element</option>
+
+                            <option value="Tape">Conversion-to-digital/Tape</option>make your choice ::</option>
+                            <option value="Mic">Microphone/Instrument</option>
+                            <option value="Comp">Compressor</option>
+                            <option value="EQ">Equalisation</option>
+                            <option value="Broadcast">Broadcasting</option>
+                            <option value="Preamp">Preamplificator</option>
+                            <option value="Sum">Summing</option>
+
+                        </select>
+                        
+                        <select name="signal chain" id="4_elt_input">
+
+                            <option value="">Fourth element</option>
+
+                            <option value="Tape">Conversion-to-digital/Tape</option>make your choice ::</option>
+                            <option value="Mic">Microphone/Instrument</option>
+                            <option value="Comp">Compressor</option>
+                            <option value="EQ">Equalisation</option>
+                            <option value="Broadcast">Broadcasting</option>
+                            <option value="Preamp">Preamplificator</option>
+                            <option value="Sum">Summing</option>
+
+                        </select>
+                        
+                        <select name="signal chain" id="5_elt_input">
+
+                            <option value="">Fifth element</option>
+
+                            <option value="Tape">Conversion-to-digital/Tape</option>make your choice ::</option>
+                            <option value="Mic">Microphone/Instrument</option>
+                            <option value="Comp">Compressor</option>
+                            <option value="EQ">Equalisation</option>
+                            <option value="Broadcast">Broadcasting</option>
+                            <option value="Preamp">Preamplificator</option>
+                            <option value="Sum">Summing</option>
+
+                        </select>
+                        
+                        <select name="signal chain" id="6_elt_input">
+
+                            <option value="">sixth element</option>
+
+                            <option value="Tape">Conversion-to-digital/Tape</option>make your choice ::</option>
+                            <option value="Mic">Microphone/Instrument</option>
+                            <option value="Comp">Compressor</option>
+                            <option value="EQ">Equalisation</option>
+                            <option value="Broadcast">Broadcasting</option>
+                            <option value="Preamp">Preamplificator</option>
+                            <option value="Sum">Summing</option>
+
+                        </select>
+                        
+                    </div>
+
+                    <div class="quiz_nav">
+                        <button class="prev">Prev</button>
+                        <button class="next">Next</button>
+                    </div>
+
+                </article>
+
+
+                <article id="quiz_result">
+
+                    <h3>Here is your score :</h3>
+
+                    <p id="dialog_box"></p>
+
+                    <button id="reset_button">Try again</button>
+
+                </article>
+
+            </section>
+
+        </fieldset>
+
     </main>
 
 
