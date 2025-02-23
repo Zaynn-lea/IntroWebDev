@@ -57,7 +57,7 @@ html {
 
 a,
 a:visited {
-    font-size:       normal;
+    font-size:       inherit;
     color:           var(--TextColor);
     text-decoration: none;
 }
@@ -241,10 +241,6 @@ footer {
     justify-content: space-around;
 }
 
-footer article {
-    margin:  auto;
-    padding: auto;
-}
 
 footer a,
 footer a:visited {
