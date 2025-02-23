@@ -58,3 +58,9 @@ date :
 .TP_solution * ul {
     list-style: none;
 }
+
+
+/* for TP6 */
+.TP_solution * span {
+    inline-size: 1em;
+}

@@ -9,7 +9,7 @@ made by :
 
 date :
     started      :  21 / 01 / 2025
-    last updated :  19 / 02 / 2025
+    last updated :  23 / 02 / 2025
 -->
 
 <!DOCTYPE html>
@@ -30,8 +30,12 @@ date :
 
     <link rel="stylesheet" href="../../css/style.css">
 
+    <link rel="stylesheet" href="../../css/TP/TP.css">
+
     <script defer type="text/javascript" src="../../javascript/Theme/theme_handler.js"></script>
     <script defer type="text/javascript" src="../../javascript/nav_bar_handler.js"></script>
+
+    <script defer type="text/javascript" src="../../javascript/TP6/casino_roulette.js"></script>
 </head>
 
 <body>
@@ -90,7 +94,46 @@ date :
             
             <section class="TP_solution">
 
-                <h3>Welcome to the casino !</h3>
+                <h2>Welcome to the casino !</h2>
+
+                
+
+                <section>
+
+                    <h3>Number of spins :</h3>
+
+                    <input
+                        type="number"
+                        id="number_spins_input"
+                        value=""
+                        min="1"
+                        max="1000000"
+                    >
+
+                    <button id="simulate_button">Simulate</button>
+
+                </section>
+
+                <!-- hidden because I was a bit too slow to debug this part -->
+                <section class="hidden">
+
+                    <h3>Recent spins :</h3>
+                    
+                    <p id="last_30_spins"></p>
+
+                </section>
+
+                <section class="TP_solution">
+
+                    <h3>Result and statistics :</h3>
+
+                    <p id="total_qualifiant_display"></p>
+                    <p id="winning_qualifiant_display"></p>
+                    <p id="loosing_qualifiant_display"></p>
+                    <p id="win_rate_display"></p>
+                    <p id="win_percent_display"></p>
+
+                </section>
 
             </section>
 
